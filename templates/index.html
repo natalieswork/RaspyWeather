@@ -48,6 +48,7 @@
             </div>
           </div>
         </div>
+        <br />
         <button class="btn btn-light">Find</button>
       </form>
       {% if data %} {{data.main}}: {{ data.description }} <br />
@@ -55,7 +56,7 @@
         src="https://openweathermap.org/img/wn/{{data.icon}}@2x.png"
         alt="Weather Condition Icon"
       />
-      {{data.temperature}} {% endif %}
+      {{data.temperature}} F {% endif %}
     </div>
 
     <script

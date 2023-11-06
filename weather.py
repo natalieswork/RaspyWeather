@@ -9,7 +9,7 @@ class WeatherData:
     main: str
     description: str
     icon: str
-    temperature: float
+    temperature: int
 
 
 load_dotenv()
@@ -37,7 +37,7 @@ def get_current_weather(lat, lon, API_key):
     else:
         main = description = icon = "N/A"
 
-    temperature = current_weather.get('temp', "N/A")
+    temperature = int(current_weather.get('temp', "N/A"))
 
     data = WeatherData(main=main, description=description,
                        icon=icon, temperature=temperature)
