@@ -1,3 +1,8 @@
 .DS_Store
 .venv/
 .env
+__pycache__/
+.vscode
+website/__pycache__
+website/database.db
+instance/
