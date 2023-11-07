@@ -4,6 +4,8 @@ theWeather is a Flask web application that allows users to view current weather 
 
 # Setup
 
+- Clone the repository to a new directory. `git clone <repo_url>`
+- Configure a file named `.env` in project's directory with `API_KEY`, `DB_NAME`, and `SECRET_KEY`.
 - From a terminal opened at this project's directory, create a virtual environment: `python -m venv .venv`
 - Activate the virtual environment.
   macOS: `source .venv/bin/activate`
