@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
-<h3>Add Location</h3>
+<h2>Add Location</h2>
 <form action="/" method="post">
   <div class="container">
     <div class="row">
@@ -38,7 +38,7 @@
 </form>
 
 <br />
-<h3>All Locations</h3>
+<h2>All Locations</h2>
 <ul class="list-group list-group-flush" id="locations">
   {% for item in weather_data %}
   <li class="list-group-item">

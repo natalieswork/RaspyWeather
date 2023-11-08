@@ -48,11 +48,30 @@
         text-align: center;
         padding: 20px;
       }
+
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body class="bg-info text-white">
-    <div class="text-center">
-      <h1 class="mt-5">theWeather</h1>
+    <div class="container">
+      <img
+        src="{{ url_for('static', filename='images/cloud.png') }}"
+        class="image"
+        width="350"
+        height="350"
+      />
+      <div class="centered"><h1 class="mt-5">theWeather</h1></div>
     </div>
 
     <div class="container">{% block content %} {% endblock %}</div>
