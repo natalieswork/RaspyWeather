@@ -14,7 +14,7 @@ db_name = os.getenv('DB_NAME')
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
+    app.config['SECRET_KEY'] = secret_key
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_name}'
     db.init_app(app)
 
@@ -31,6 +31,9 @@ def create_app():
 
 
 def create_database():
-    if not path.exists('website/' + db_name):
+    try:
+        db.engine.execute('DROP TABLE IF EXISTS location')
         db.create_all()
         print('Created Database!')
+    except Exception as e:
+        print(f'Error occurred: {str(e)}')
