@@ -25,7 +25,7 @@ def create_app():
     from .models import Location
 
     with app.app_context():
-        db.create_all()
+        create_database()
 
     return app
 
