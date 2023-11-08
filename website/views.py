@@ -37,6 +37,8 @@ def index():
             'weather': data
         })
 
+    weather_data.reverse()
+
     return render_template('index.html',  weather_data=weather_data)
 
 
