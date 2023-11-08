@@ -25,16 +25,12 @@ def create_app():
     from .models import Location
 
     with app.app_context():
-        create_database
-        db.create_all()
+        create_database()
 
     return app
 
 
 def create_database():
-    try:
-        db.engine.execute('DROP TABLE IF EXISTS location')
+    if not path.exists('instance/' + db_name):
         db.create_all()
         print('Created Database!')
-    except Exception as e:
-        print(f'Error occurred: {str(e)}')
