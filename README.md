@@ -1,6 +1,8 @@
 # theWeather
 
-theWeather is a Flask web application that allows users to view current weather data for several locations.
+[NOW DEPLOYED HERE.]( https://theweather-17ee7b4ce254.herokuapp.com/)
+
+theWeather is a Flask web application that allows users to view current weather data for several locations. 
 
 # Setup
 
