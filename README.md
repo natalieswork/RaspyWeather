@@ -1,6 +1,6 @@
 # theWeather
 
-Now deployed [HERE]( https://theweather-17ee7b4ce254.herokuapp.com/).
+Now deployed [HERE](https://theweather-ebd7e062c6bd.herokuapp.com/).
 
 theWeather is a Flask web application that allows users to view current weather data for several locations. 
 
