@@ -1,8 +1,10 @@
 # theWeather
 
-Now deployed [HERE](https://theweather-ebd7e062c6bd.herokuapp.com/).
+A demo video can be viewed [HERE](https://youtu.be/ecLFX8rpt2g).
 
 theWeather is a Flask web application that allows users to view current weather data for several locations. 
+
+Tech Stack: Python, Flask, SQLite, OpenWeather API
 
 # Setup
 
